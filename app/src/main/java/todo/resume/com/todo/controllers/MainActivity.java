@@ -43,22 +43,6 @@ public class MainActivity extends AppCompatActivity {
         setupRecyclerview();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        if(getSupportFragmentManager().getBackStackEntryCount() > 0) {
-            getSupportFragmentManager().popBackStack();
-            if(getSupportFragmentManager().getBackStackEntryCount() == 0)
-                mFloatingActionButton.animate().translationY(0);
-        } else
-            super.onBackPressed();
-    }
-
     public void showDialog(final Note note) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = LayoutInflater.from(this);
