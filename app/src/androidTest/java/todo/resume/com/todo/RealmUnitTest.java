@@ -46,13 +46,13 @@ public class RealmUnitTest {
         DatabaseHelper.getInstance().addNote(new Note("Test", "Test"));
         assertEquals(1, DatabaseHelper.getInstance().getRealmNotes().size());
 
+        realm.beginTransaction();
+
         //edit the note and confirm edit occurred
         Note editNote = DatabaseHelper.getInstance().getRealmNotes().first();
         editNote.setTitle("Test 2");
         editNote.setNoteDescription("Test 2");
         DatabaseHelper.getInstance().updateNote(editNote);
-
-        realm.commitTransaction();
 
         Note newNote = DatabaseHelper.getInstance().getRealmNotes().first();
         assertEquals("Test 2", newNote.getTitle());
