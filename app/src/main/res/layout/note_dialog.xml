@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:rbtv="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <todo.resume.com.todo.views.widgets.RobotoEditText
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/noteTitleET"
+        android:hint="@string/title_et_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        rbtv:font="@string/key_bold"
+        android:textSize="22sp"/>
+
+    <todo.resume.com.todo.views.widgets.RobotoEditText
+        android:id="@+id/noteDescriptionET"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_note_desc_hint"
+        rbtv:font="@string/key_normal"
+        android:textSize="14sp"/>
+
+</LinearLayout>

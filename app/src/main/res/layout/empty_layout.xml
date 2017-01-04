@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/emptyBoxIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/empty_box"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/nothing_to_see_here"
+        android:layout_centerInParent="true"/>
+
+    <todo.resume.com.todo.views.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nothing_to_see_here"
+        android:layout_below="@+id/emptyBoxIMG"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

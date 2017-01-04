@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    tools:context="todo.resume.com.todo.controllers.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+        android:id="@+id/realm_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:rrvLayoutType="LinearLayout"
+        app:rrvSwipeToDelete="true"
+        app:rrvEmptyLayoutId="@layout/empty_layout"
+        />
+</FrameLayout>

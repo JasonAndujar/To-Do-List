@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="action_settings">Settings</string>
+    <string name="key_bold">BOLD</string>
+    <string name="key_normal">NORMAL</string>
+    <string name="key_thin">THIN</string>
+    <string name="title_et_hint">Enter Title Here</string>
+    <string name="new_note_desc_hint">Tell me more about that here..</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="nothing_to_see_here">Nothing to see here!</string>
+    <string name="create_note">CREATE NOTE</string>
+    <string name="edit_note">EDIT NOTE</string>
+</resources>
